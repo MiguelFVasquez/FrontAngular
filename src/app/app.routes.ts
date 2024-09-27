@@ -10,8 +10,13 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
   {path: 'evento', component:EventCardComponent},
-  {path: 'adminHeader', component:AdminHeaderComponent},
-  {path: 'adminDashBoard', component:AdminDashBoardComponent},
+  {
+    path: 'admin', // Ruta principal para el administrador
+    component: AdminHeaderComponent, // Siempre muestra el header
+    children: [
+      { path: 'dashboard', component: AdminDashBoardComponent }, // Carga el dashboard como hijo
+    ]
+  },
   {path: 'user', component:UserComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }

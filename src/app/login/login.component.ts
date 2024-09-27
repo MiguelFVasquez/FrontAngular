@@ -18,7 +18,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.username === 'admin' && this.password === '1234') {
       // Redirige a adminDashBoard si las credenciales son correctas
-      this.router.navigate(['/adminDashBoard']);
+      this.router.navigate(['/admin/dashboard']);
     }else if(this.username === 'juan' && this.password === '1234') {
       this.router.navigate(['/user']);  
     }else {

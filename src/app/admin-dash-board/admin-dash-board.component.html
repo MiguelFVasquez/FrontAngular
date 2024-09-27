@@ -1,1 +1,8 @@
-<p>admin-dash-board works!</p>
+<div class="dashboard">
+  <h2>Dashboard de Eventos</h2>
+  <div class="event-cards-container">
+    <!-- Recorre los eventos y renderiza cada tarjeta -->
+    <app-event-card *ngFor="let event of events" [event]="event"></app-event-card>
+  </div>
+</div>
+<router-outlet></router-outlet> <!-- Asegúrate de que esté bien ubicado -->

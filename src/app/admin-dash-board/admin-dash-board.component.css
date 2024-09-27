@@ -1,0 +1,9 @@
+.dashboard {
+  padding: 20px;
+}
+
+.event-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cuadrícula adaptable */
+  gap: 20px; /* Espaciado entre tarjetas */
+}

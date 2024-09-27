@@ -8,7 +8,7 @@ import { routes } from './app.routes';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LoginComponent, RegistroComponent],
+  imports: [CommonModule, RouterOutlet, LoginComponent, RegistroComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
